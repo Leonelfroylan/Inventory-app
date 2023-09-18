@@ -1,0 +1,327 @@
+<div class="mobile-menu-left-overlay"></div>
+<nav class="side-menu">
+  <ul class="side-menu-list">
+    <li class="blue-dirty">
+      <a [routerLink]="'/home'">
+          <span class="glyphicon glyphicon-home"></span>
+          <span class="lbl">Inicio</span>
+          </a>
+      </li>
+<!--       <li class="brown with-sub">
+          <a [routerLink]="'/usuarios'">
+            <span class="font-icon glyphicon glyphicon-user"></span>
+            <span class="lbl">Usuarios</span>
+            </a>
+
+      </li> -->
+
+      <li class="brown with-sub">
+        <span>
+          <span class="font-icon glyphicon glyphicon-user"></span>
+            <span class="lbl">Usuarios</span>
+        </span>
+        <ul>
+          <li>
+                <span [routerLink]="'/usuarios'">
+                  <i class="fa fa-solid fa-user"></i>
+                  <span class="lbl">Usuarios  </span>
+              </span>
+          </li>
+          <li>
+            <span [routerLink]="'/usuarios'">
+              <i class="fa fa-solid fa-users"></i>
+              <span class="lbl">Empleados</span>
+          </span>
+      </li>
+        </ul>
+    </li>
+
+      <li class="purple ">
+        <a [routerLink]="'/clientes'">
+              <i class="font-icon font-icon-users"></i>
+              <span class="lbl">Clientes</span>
+        </a>
+      </li>
+
+      <li class="gold with-sub">
+        <span>
+            <i class="font-icon font-icon-build"></i>
+            <span class="lbl">Almacen</span>
+        </span>
+        <ul>
+          <li>
+            <span [routerLink]="'/entrada-salida'">
+              <i class="fa fa-solid fa-outdent"></i>
+              <span class="lbl">Entradas y Salidas</span>
+          </span>
+          </li>
+            <li>
+              <span [routerLink]="'/categorias'">
+                <i class="fa fa-solid fa-bars"></i>
+                <span class="lbl">Categoria</span>
+            </span>
+            </li>
+
+            <li>
+              <span>
+                <i class="fa fa-balance-scale"></i>
+                <span class="lbl">Presentacion</span>
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <i class="fa fa-solid fa-registered"></i>
+                <span class="lbl">Marca</span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <i class="fa fa-product-hunt"></i>
+                <span class="lbl">Producto</span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <i class="fa fa-solid fa-dolly"></i>
+                <span class="lbl">Perecederos</span>
+              </span>
+            </li>
+
+            <!-- <li>
+              <span>
+                <i class="fa  fa-shop"></i>
+                <span class="lbl">Sucursales</span>
+              </span>
+            </li> -->
+        </ul>
+    </li>
+    <li class="red ">
+      <span>
+        <i class="fa fa-product-hunt"></i>
+        <span class="lbl">Inventario</span>
+      </span>
+  </li>
+
+  <li class="pink with-sub">
+    <span>
+      <i class="fa fa-solid fa-file-invoice"></i>
+        <span class="lbl">Cotizacion</span>
+    </span>
+    <ul>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-file-signature"></i>
+          <span class="lbl">Generar Cotizacion</span>
+      </span>
+      </li>
+        <li>
+          <span>
+            <i class="fa fa-solid fa-file-contract"></i>
+            <span class="lbl">Ver Cotizacion</span>
+        </span>
+        </li>
+    </ul>
+</li>
+
+<li class="brown with-sub">
+  <span>
+    <i class="fa fa-solid fa-basket-shopping"></i>
+      <span class="lbl">Compras</span>
+  </span>
+  <ul>
+    <li>
+      <span>
+        <i class="fa fa-solid fa-boxes-packing"></i>
+        <span class="lbl">Proveedores</span>
+    </span>
+    </li>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-cart-shopping"></i>
+          <span class="lbl">Realizar Compra</span>
+      </span>
+      </li>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-receipt"></i>
+          <span class="lbl">Consultar Compras</span>
+      </span>
+      </li>
+  </ul>
+</li>
+
+<li class="blue with-sub">
+  <span>
+    <i class="fa fa-solid fa-cash-register"></i>
+      <span class="lbl">Caja</span>
+  </span>
+  <ul>
+    <li>
+      <span>
+        <i class="fa fa-solid fa-file-waveform"></i>
+        <span class="lbl">Administrar de caja</span>
+    </span>
+    </li>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-file-invoice"></i>
+          <span class="lbl">Historial</span>
+      </span>
+      </li>
+  </ul>
+</li>
+
+<li class="orange-red with-sub">
+  <span>
+    <i class="fa fa-solid fa-credit-card"></i>
+      <span class="lbl">Creditos</span>
+  </span>
+  <ul>
+    <li>
+      <span>
+        <i class="fa fa-solid fa-cart-shopping"></i>
+        <span class="lbl">Venta a Credito</span>
+    </span>
+    </li>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-file-invoice"></i>
+          <span class="lbl">Historial</span>
+      </span>
+      </li>
+  </ul>
+</li>
+
+<li class="aquamarine with-sub">
+  <span>
+    <i class="fa fa-solid fa-cash-register"></i>
+      <span class="lbl">Ventas</span>
+  </span>
+  <ul>
+    <li>
+      <span>
+        <i class="fa fa-solid fa-cart-shopping"></i>
+        <span class="lbl">Realizar Venta</span>
+    </span>
+    </li>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-file-invoice"></i>
+          <span class="lbl">Historial</span>
+      </span>
+      </li>
+  </ul>
+</li>
+
+<li class="magenta with-sub">
+  <span>
+    <i class="fa fa-solid fa-shop-lock"></i>
+      <span class="lbl">Apartado</span>
+  </span>
+  <ul>
+    <li>
+      <span>
+        <i class="fa fa-solid fa-basket-shopping"></i>
+        <span class="lbl">Apartar producto</span>
+    </span>
+    </li>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-file-invoice"></i>
+          <span class="lbl">Historial</span>
+      </span>
+      </li>
+  </ul>
+</li>
+
+<li class="coral with-sub">
+  <span>
+    <i class="fa fa-solid fa-shop-lock"></i>
+      <span class="lbl">Comprobantes</span>
+  </span>
+  <ul>
+    <li>
+      <span>
+        <i class="fa fa-solid fa-basket-shopping"></i>
+        <span class="lbl">Tipo de Comprobantes</span>
+    </span>
+    </li>
+      <li>
+        <span>
+          <i class="fa fa-solid fa-file-invoice"></i>
+          <span class="lbl">Ver Comprobantes</span>
+      </span>
+      </li>
+  </ul>
+</li>
+
+      <li class="green with-sub">
+          <span>
+              <span class="fa fa-chart-simple"></span>
+              <span class="lbl">Reportes</span>
+          </span>
+          <ul>
+            <li>
+              <span>
+                <i class="fa fa-chart-simple"></i>
+                <span class="lbl">Ventas</span>
+            </span>
+            </li>
+
+            <li>
+              <span>
+                <i class="fa fa-bag-shopping"></i>
+                <span class="lbl">Compras</span>
+            </span>
+            </li>
+
+            <li>
+              <span>
+                <i class="fa fa-book"></i>
+                <span class="lbl">Deudas Pendientes</span>
+            </span>
+            </li>
+          </ul>
+      </li>
+      <li class="magenta with-sub">
+        <span>
+            <span class="glyphicon glyphicon-cog"></span>
+            <span class="lbl">Configuraciones</span>
+        </span>
+        <ul>
+          <li>
+            <span>
+              <i class="fa fa-scale-balanced"></i>
+              <span class="lbl">Precentacion</span>
+          </span>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa fa-chart-simple"></i>
+              <span class="lbl">Datos de la empresa</span>
+          </span>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa fa-store"></i>
+              <span class="lbl"> Sucursales</span>
+          </span>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa fa-money-bill"></i>
+              <span class="lbl"> Moneda</span>
+          </span>
+          </li>
+        </ul>
+    </li>
+
+  </ul>
+
+
+</nav><!--.side-menu-->
+

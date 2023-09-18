@@ -1,0 +1,73 @@
+<div class="modal fade" id="AddusersModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                  <i class="font-icon-close-2"></i>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Cargar Imagen</h4>
+          </div>
+          <div class="modal-upload menu-bottom">
+              <div class="modal-upload-cont">
+                  <div class="modal-upload-cont-in">
+                      <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active" id="tab-upload-2">
+                              <div class="modal-upload-body scrollable-block">
+                                  <div class="uploading-container">
+                                      <div class="uploading-container-left">
+                                          <div class="drop-zone">
+                                              <!--
+                                              при перетаскиваении добавляем класс .dragover
+                                              <div class="drop-zone dragover">
+                                              -->
+                                              <i class="font-icon font-icon-cloud-upload-2"></i>
+                                              <div class="drop-zone-caption">Arrastre la Imagen</div>
+                                              <span class="btn btn-rounded btn-file">
+                                                  <span>Elegir archivo</span>
+                                                  <input type="file" name="files[]" multiple>
+                                              </span>
+                                          </div>
+                                      </div><!--.uploading-container-left-->
+                                      <div class="uploading-container-right">
+                                          <div class="uploading-container-right-in">
+                                              <h6 class="uploading-list-title">Cargando...</h6>
+                                              <ul class="uploading-list">
+                                                  <li class="uploading-list-item">
+                                                      <div class="uploading-list-item-wrapper">
+                                                          <div class="uploading-list-item-name">
+                                                              <i class="font-icon font-icon-cam-photo"></i>
+                                                              photo.png
+                                                          </div>
+                                                          <div class="uploading-list-item-size">7,5 mb</div>
+                                                          <button type="button" class="uploading-list-item-close">
+                                                              <i class="font-icon-close-2"></i>
+                                                          </button>
+                                                      </div>
+                                                      <progress class="progress" value="25" max="100">
+                                                          <div class="progress">
+                                                              <span class="progress-bar" style="width: 25%;">25%</span>
+                                                          </div>
+                                                      </progress>
+                                                      <div class="uploading-list-item-progress">37% done</div>
+                                                      <div class="uploading-list-item-speed">90KB/sec</div>
+                                                  </li>
+
+                                              </ul>
+                                          </div>
+                                      </div><!--.uploading-container-right-->
+                                  </div><!--.uploading-container-->
+                              </div><!--.modal-upload-body-->
+                              <div class="modal-upload-bottom">
+                                  <button type="button" class="btn btn-rounded btn-default">Cancel</button>
+                                  <button type="button" class="btn btn-rounded">Guardar</button>
+                              </div><!--.modal-upload-bottom-->
+                          </div><!--.tab-pane-->
+
+                      </div><!--.tab-content-->
+                  </div><!--.modal-upload-cont-in-->
+              </div><!--.modal-upload-cont-->
+
+          </div>
+      </div>
+  </div>
+</div><!--.modal-->

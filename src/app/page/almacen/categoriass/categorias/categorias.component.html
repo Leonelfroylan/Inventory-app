@@ -1,0 +1,117 @@
+<header class="section-header box-typical-heade">
+  <div class="tbl">
+    <div class="tbl-row">
+      <div class="tbl-cell">
+        <h2>Categorias</h2>
+        <div class="subtitle">Administra tus Categorias</div>
+        <ol class="breadcrumb breadcrumb-simple">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Almacen</a></li>
+          <li><a href="#">Categorias</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="card">
+  <div class="card-block">
+    <button type="button" class="btn btn-rounded btn-inline btn-success" [routerLink]="'/add-clientes'" ><i class="font-icon font-icon-plus"></i><span class="lbl"> Agregar</span></button>
+
+    <div class="float-right">
+      <div class="dropdown">
+        <button class="btn btn-inline dropdown-toggle btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          <i class="glyphicon glyphicon-download"></i><span class="lbl"> Descargar</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-csv"></i> PDF</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-excel"></i> Excel</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-csv"></i> CSV</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-zipper"></i> ZIP</a>
+        </div>
+      </div>
+    </div>
+    <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Description</th>
+        <th>Estatus</th>
+        <th>Fecha</th>
+        <th>Acciones</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>Bebidas</td>
+        <td>Grupo   de Bebidas</td>
+        <td><button type="button" class="btn btn-inline btn-success">Activo</button></td>
+        <td>2011/04/25</td>
+        <td>
+          <header class="box-typical-header">
+            <div class="tbl-row">
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline" title="Like"><i class="font-icon font-icon-pencil"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+              </div>
+            </div>
+          </header>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>MAriscos</td>
+        <td>Grupo de Mariscos</td>
+        <td><button type="button" class="btn btn-inline btn-danger">Desactivado</button></td>
+        <td>2011/04/25</td>
+        <td>
+          <header class="box-typical-header">
+            <div class="tbl-row">
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline"><i class="font-icon font-icon-pencil"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+              </div>
+            </div>
+          </header>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Galletas</td>
+        <td>Grupo de Bebidas</td>
+        <td><button type="button" class="btn btn-inline btn-success">Activo</button></td>
+        <td>2011/04/25</td>
+
+        <td><header class="box-typical-header">
+          <div class="tbl-row">
+            <div class="tbl-cell tbl-cell-action-bordered">
+              <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline"><i class="font-icon font-icon-pencil"></i></button>
+            </div>
+            <div class="tbl-cell tbl-cell-action-bordered">
+              <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+            </div>
+            <div class="tbl-cell tbl-cell-action-bordered">
+              <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+            </div>
+          </div>
+        </header></td>
+      </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+</section>
+

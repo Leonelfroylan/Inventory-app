@@ -1,0 +1,227 @@
+<header class="section-header box-typical-heade">
+  <div class="tbl">
+    <div class="tbl-row">
+      <div class="tbl-cell">
+        <h2>Clientes</h2>
+        <div class="subtitle">Agregar nuevo Clientes</div>
+        <ol class="breadcrumb breadcrumb-simple">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li class="active">Agregar</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="box-typical box-typical-padding">
+  <form>
+    <div class="row">
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label semibold" for="exampleInput">Nombre</label>
+          <input type="text" class="form-control" id="exampleInput" placeholder="Nombre">
+
+        </fieldset>
+      </div>
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Apellido Paterno</label>
+          <input type="text" class="form-control" id="exampleInput" placeholder="Apellido Paterno">
+        </fieldset>
+      </div>
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Apellido Materno</label>
+          <input type="text" class="form-control" id="exampleInput" placeholder="Apellido Materno">
+        </fieldset>
+      </div>
+    </div><!--.row-->
+
+    <div class="row">
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label semibold" for="exampleInput">Tipo dse Cliente</label>
+          <select class="bootstrap-select"  data-style="form-control" data-live-search="true" title="-- Seleccione --">
+            <option> <i class="fa-solid fa-user"></i> General</option>
+              <option><i class="fa-solid fa-user-tie"></i> Frecuente</option>
+              <!-- <option><i class="fa-solid fa-building-user"></i> Obrero</option>
+              <option><i class="fa-solid fa-user-tie"></i> Ejecutivo</option> -->
+          </select>
+        <br/>
+        <br/>
+
+        </fieldset>
+      </div>
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Correo</label>
+          <input type="email" class="form-control" id="exampleInput" placeholder="Correo">
+        </fieldset>
+      </div>
+      <!-- <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInput" placeholder="Contraseña">
+        </fieldset>
+      </div> -->
+    </div><!--.row-->
+
+    <div class="row">
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label semibold" for="exampleInput">Direcciion</label>
+          <input type="text" class="form-control" id="exampleInput" placeholder="Direcciion">
+
+        </fieldset>
+      </div>
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Ciudad</label>
+          <input type="email" class="form-control" id="exampleInput" placeholder="Ciudad">
+        </fieldset>
+      </div>
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Codigo postal</label>
+          <input type="password" class="form-control" id="exampleInput" placeholder="Codigo postal">
+        </fieldset>
+      </div>
+    </div><!--.row-->
+
+    <div class="row">
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label semibold" for="exampleInput">Telefono</label>
+          <input type="text" class="form-control" id="exampleInput" placeholder="Telefono">
+
+        </fieldset>
+      </div>
+      <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Celular</label>
+          <input type="email" class="form-control" id="exampleInput" placeholder="Celular">
+        </fieldset>
+      </div>
+
+<!--       <div class="row">
+        <div class="col-md-3">
+          <fieldset class="form-group">
+            <label class="form-label" for="exampleInput">Rol</label>
+            <select class="bootstrap-select"  data-style="form-control" data-live-search="true" title="-- Select your coffee --">
+              <option> <i class="fa-solid fa-user-shield"></i> Admin</option>
+								<option><i class="fa-solid fa-person-chalkboard"></i> Gerente</option>
+								<option><i class="fa-solid fa-building-user"></i> Obrero</option>
+								<option><i class="fa-solid fa-user-tie"></i> Ejecutivo</option>
+            </select>
+          <br/>
+          <br/>
+          </fieldset>
+        </div>
+      </div> -->
+
+        <div class="col-lg-6 text-center">
+          <div class="row">
+              <div class="col-sm-10">
+                  <section class="card">
+                      <header class="card-header">
+                          Cargar una Imagen
+                      </header>
+                      <div class="card-block text-center">
+                          <a href="#" data-toggle="modal" data-target="#upload2Modal" class="btn btn-primary">Click para cargar Imagen</a>
+                      </div>
+                  </section>
+              </div><!--.col-->
+          </div><!--.row-->
+      </div>
+
+
+      <!-- <div class="col-lg-4">
+        <fieldset class="form-group">
+          <label class="form-label" for="exampleInput">Foto</label>
+          <input type="file" class="form-control" id="exampleInput" placeholder="Foto">
+        </fieldset>
+      </div> -->
+    </div><!--.row-->
+
+    <div class="modal fade" id="upload2Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                      <i class="font-icon-close-2"></i>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Cargar Imagen</h4>
+              </div>
+              <div class="modal-upload menu-bottom">
+                  <div class="modal-upload-cont">
+                      <div class="modal-upload-cont-in">
+                          <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="tab-upload-2">
+                                  <div class="modal-upload-body scrollable-block">
+                                      <div class="uploading-container">
+                                          <div class="uploading-container-left">
+                                              <div class="drop-zone">
+                                                  <!--
+                                                  при перетаскиваении добавляем класс .dragover
+                                                  <div class="drop-zone dragover">
+                                                  -->
+                                                  <i class="font-icon font-icon-cloud-upload-2"></i>
+                                                  <div class="drop-zone-caption">Arrastre la Imagen</div>
+                                                  <span class="btn btn-rounded btn-file">
+                                                      <span>Elegir archivo</span>
+                                                      <input type="file" name="files[]" multiple>
+                                                  </span>
+                                              </div>
+                                          </div><!--.uploading-container-left-->
+                                          <div class="uploading-container-right">
+                                              <div class="uploading-container-right-in">
+                                                  <h6 class="uploading-list-title">Cargando...</h6>
+                                                  <ul class="uploading-list">
+                                                      <li class="uploading-list-item">
+                                                          <div class="uploading-list-item-wrapper">
+                                                              <div class="uploading-list-item-name">
+                                                                  <i class="font-icon font-icon-cam-photo"></i>
+                                                                  photo.png
+                                                              </div>
+                                                              <div class="uploading-list-item-size">7,5 mb</div>
+                                                              <button type="button" class="uploading-list-item-close">
+                                                                  <i class="font-icon-close-2"></i>
+                                                              </button>
+                                                          </div>
+                                                          <progress class="progress" value="25" max="100">
+                                                              <div class="progress">
+                                                                  <span class="progress-bar" style="width: 25%;">25%</span>
+                                                              </div>
+                                                          </progress>
+                                                          <div class="uploading-list-item-progress">37% done</div>
+                                                          <div class="uploading-list-item-speed">90KB/sec</div>
+                                                      </li>
+
+                                                  </ul>
+                                              </div>
+                                          </div><!--.uploading-container-right-->
+                                      </div><!--.uploading-container-->
+                                  </div><!--.modal-upload-body-->
+                                  <div class="modal-upload-bottom">
+                                      <button type="button" class="btn btn-rounded btn-danger" data-dismiss="modal">Cancel</button>
+                                      <button type="button" class="btn btn-rounded btn-success">Guardar</button>
+                                  </div><!--.modal-upload-bottom-->
+                              </div><!--.tab-pane-->
+
+                          </div><!--.tab-content-->
+                      </div><!--.modal-upload-cont-in-->
+                  </div><!--.modal-upload-cont-->
+
+              </div>
+          </div>
+      </div>
+  </div><!--.modal-->
+
+  </form>
+  <div class="row w-100 align-items-center col text-center">
+    <button type="button" class="btn btn-rounded btn-inline btn-success swal-btn-success" ><i class="glyphicon glyphicon-floppy-disk"></i><span class="lbl"> Guardar</span></button>
+    <button type="button" class="btn btn-rounded btn-inline btn-danger swal-btn-cancel" ><i class="glyphicon glyphicon-remove-circle"></i><span class="lbl"> Cancelar</span></button>
+  </div>
+
+</div>
+

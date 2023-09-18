@@ -1,0 +1,225 @@
+<header class="section-header box-typical-heade">
+  <div class="tbl">
+    <div class="tbl-row">
+      <div class="tbl-cell">
+        <h2>Entradas y Salidas</h2>
+        <div class="subtitle">Administra tus Entradas y Salidas</div>
+        <ol class="breadcrumb breadcrumb-simple">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Almacen</a></li>
+          <li class="active">Entradas y Salidas</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="card">
+  <div class="card-block">
+
+      <h3>INGRESO DE PRODUCTOS</h3>
+      <button type="button" class="btn btn-rounded btn-inline btn-success" [routerLink]="'/add-clientes'" ><i class="font-icon font-icon-plus"></i><span class="lbl"> Agregar</span></button>
+    <div class="float-right">
+
+      <div class="dropdown">
+        <button class="btn btn-inline dropdown-toggle btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          <i class="glyphicon glyphicon-download"></i><span class="lbl"> Descargar</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-csv"></i> PDF</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-excel"></i> Excel</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-csv"></i> CSV</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-zipper"></i> ZIP</a>
+        </div>
+      </div>
+    </div>
+    <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+      <thead>
+      <tr>
+        <th>Fecha de ingreso</th>
+        <th>Descripción</th>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Costo total</th>
+        <th>Acciones</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>29/08/2023</td>
+        <td>Coca-Cola</td>
+        <td>8776897</td>
+        <td>Coca-Cola</td>
+        <td>61</td>
+        <td>$3500</td>
+        <td>
+          <header class="box-typical-header">
+            <div class="tbl-row">
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline" title="Like"><i class="font-icon font-icon-pencil"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+              </div>
+            </div>
+          </header>
+        </td>
+      </tr>
+      <tr>
+        <td>29/08/2023</td>
+        <td>Sabritas</td>
+        <td>8776897</td>
+        <td>Sabritas</td>
+        <td>61</td>
+        <td>$2500</td>
+        <td>
+          <header class="box-typical-header">
+            <div class="tbl-row">
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline"><i class="font-icon font-icon-pencil"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+              </div>
+            </div>
+          </header>
+        </td>
+      </tr>
+      <tr>
+        <td>29/08/2023</td>
+        <td>Tecate Roja</td>
+        <td>8776897</td>
+        <td>Tecate Roja</td>
+        <td>61</td>
+        <td>$3500</td>
+        <td><header class="box-typical-header">
+          <div class="tbl-row">
+            <div class="tbl-cell tbl-cell-action-bordered">
+              <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline"><i class="font-icon font-icon-pencil"></i></button>
+            </div>
+            <div class="tbl-cell tbl-cell-action-bordered">
+              <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+            </div>
+            <div class="tbl-cell tbl-cell-action-bordered">
+              <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+            </div>
+          </div>
+        </header></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<section class="card">
+  <div class="card-block">
+
+      <h3>SALIDA DE PRODUCTOS</h3>
+      <button type="button" class="btn btn-rounded btn-inline btn-success" [routerLink]="'/add-clientes'" ><i class="font-icon font-icon-plus"></i><span class="lbl"> Agregar</span></button>
+    <div class="float-right">
+      <div class="dropdown">
+        <button class="btn btn-inline dropdown-toggle btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          <i class="glyphicon glyphicon-download"></i><span class="lbl"> Descargar</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-csv"></i> PDF</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-excel"></i> Excel</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-csv"></i> CSV</a>
+          <a class="dropdown-item" href="#"><i class="fa-solid fa-file-zipper"></i> ZIP</a>
+        </div>
+      </div>
+    </div>
+    <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+      <thead>
+      <tr>
+        <th>Fecha de ingreso</th>
+        <th>Descripción</th>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Costo total</th>
+        <th>Acciones</th>
+      </tr>
+      </thead>
+      <tfoot>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>29/08/2023</td>
+          <td>Coca-Cola</td>
+          <td>8776897</td>
+          <td>Coca-Cola</td>
+          <td>61</td>
+          <td>$3500</td>
+          <td>
+            <header class="box-typical-header">
+              <div class="tbl-row">
+                <div class="tbl-cell tbl-cell-action-bordered">
+                  <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline" title="Like"><i class="font-icon font-icon-pencil"></i></button>
+                </div>
+                <div class="tbl-cell tbl-cell-action-bordered">
+                  <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+                </div>
+                <div class="tbl-cell tbl-cell-action-bordered">
+                  <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+                </div>
+              </div>
+            </header>
+          </td>
+        </tr>
+        <tr>
+          <td>29/08/2023</td>
+          <td>Sabritas</td>
+          <td>8776897</td>
+          <td>Sabritas</td>
+          <td>61</td>
+          <td>$2500</td>
+          <td>
+            <header class="box-typical-header">
+              <div class="tbl-row">
+                <div class="tbl-cell tbl-cell-action-bordered">
+                  <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline"><i class="font-icon font-icon-pencil"></i></button>
+                </div>
+                <div class="tbl-cell tbl-cell-action-bordered">
+                  <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+                </div>
+                <div class="tbl-cell tbl-cell-action-bordered">
+                  <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+                </div>
+              </div>
+            </header>
+          </td>
+        </tr>
+        <tr>
+          <td>29/08/2023</td>
+          <td>Tecate Roja</td>
+          <td>8776897</td>
+          <td>Tecate Roja</td>
+          <td>61</td>
+          <td>$3500</td>
+          <td><header class="box-typical-header">
+            <div class="tbl-row">
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-primary-outline"><i class="font-icon font-icon-pencil"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-warning-outline"><i class="font-icon font-icon-re"></i></button>
+              </div>
+              <div class="tbl-cell tbl-cell-action-bordered">
+                <button type="button" class="btn btn-sm btn-rounded btn-inline btn-danger-outline"><i class="font-icon font-icon-trash"></i></button>
+              </div>
+            </div>
+          </header></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

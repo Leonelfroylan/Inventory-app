@@ -6,8 +6,311 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+
+  <link href="assets/img/favicon.144x144.png" rel="apple-touch-icon" type="assets/image/png" sizes="144x144">
+	<link href="assets/img/favicon.114x114.png" rel="apple-touch-icon" type="assets/image/png" sizes="114x114">
+	<link href="assets/img/favicon.72x72.png" rel="apple-touch-icon" type="assets/image/png" sizes="72x72">
+	<link href="assets/img/favicon.57x57.png" rel="apple-touch-icon" type="assets/ximage/png">
+	<link href="assets/img/favicon.png" rel="icon" type="image/png">
+	<link href="assets/img/favicon.ico" rel="shortcut icon">
+
+  <link rel="stylesheet" href="assets/css/lib/lobipanel/lobipanel.min.css">
+  <link rel="stylesheet" href="assets/css/separate/vendor/lobipanel.min.css">
+  <link rel="stylesheet" href="assets/css/lib/jqueryui/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/separate/pages/widgets.min.css">
+  <link rel="stylesheet" href="assets/css/lib/font-awesome/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/lib/font-awesome/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lib/datatables-net/datatables.min.css">
+  <link rel="stylesheet" href="assets/css/separate/vendor/datatables-net.min.css">
+  <link rel="stylesheet" href="assets/css/lib/font-awesome/fontawesome.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/lib/font-awesome/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/lib/bootstrap-sweetalert/sweetalert.css">
+  <link rel="stylesheet" href="assets/css/separate/vendor/sweet-alert-animations.min.css">
+  <link rel="stylesheet" href="assets/css/separate/vendor/tags_editor.min.css">
+  <link rel="stylesheet" href="assets/css/separate/vendor/bootstrap-select/bootstrap-select.min.css">
+  <link rel="stylesheet" href="assets/css/separate/vendor/select2.min.css">
+  <link rel="stylesheet" href="assets/css/lib/bootstrap-table/bootstrap-table.min.css">
+
+
+
+
+  </head>
+  <body class="with-side-menu control-panel control-panel-compact ">
+    <app-root></app-root>
+
+
+
+  <script src="assets/js/lib/jquery/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/1c81b74698.js" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+  <!-- <script src="assets/js/lib/jquery/jquery.min.js"></script> -->
+  <script src="assets/js/plugins.js"></script>
+  <script type="text/javascript" src="assets/js/lib/jqueryui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/lobipanel/lobipanel.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/match-height/jquery.matchHeight.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- <script src="assets/js/lib/jquery/jquery.min.js"></script> -->
+  <script src="assets/js/lib/tether/tether.min.js"></script>
+  <script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+
+  <script type="text/javascript" src="assets/js/lib/jqueryui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/lobipanel/lobipanel.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/match-height/jquery.matchHeight.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="assets/js/lib/datatables-net/datatables.min.js"></script>
+  <script src="assets/js/lib/bootstrap-sweetalert/sweetalert.min.js"></script>
+
+  <script src="assets/js/lib/jquery-tag-editor/jquery.caret.min.js"></script>
+    <script src="assets/js/lib/jquery-tag-editor/jquery.tag-editor.min.js"></script>
+    <script src="assets/js/lib/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/js/lib/select2/select2.full.min.js"></script>
+
+    <script src="assets/js/lib/bootstrap-table/bootstrap-table.js"></script>
+    <script src="assets/js/lib/bootstrap-table/bootstrap-table-export.min.js"></script>
+    <script src="assets/js/lib/bootstrap-table/tableExport.min.js"></script>
+    <script src="assets/js/lib/bootstrap-table/bootstrap-table-init.js"></script>
+
+  <script>
+    $(document).ready(function() {
+    $('#example').DataTable({
+      "language": {
+        "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+      }
+    });
+  });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+
+      $('.panel').lobiPanel({
+        sortable: true
+      });
+      $('.panel').on('dragged.lobiPanel', function(ev, lobiPanel){
+        $('.dahsboard-column').matchHeight();
+      });
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var dataTable = new google.visualization.DataTable();
+        dataTable.addColumn('string', 'Day');
+        dataTable.addColumn('number', 'Values');
+        // A column for custom tooltip content
+        dataTable.addColumn({type: 'string', role: 'tooltip', 'p': {'html': true}});
+        dataTable.addRows([
+          ['MON',  130, ' '],
+          ['TUE',  130, '130'],
+          ['WED',  180, '180'],
+          ['THU',  175, '175'],
+          ['FRI',  200, '200'],
+          ['SAT',  170, '170'],
+          ['SUN',  250, '250'],
+          ['MON',  220, '220'],
+          ['TUE',  220, ' ']
+        ]);
+
+        var options = {
+          height: 314,
+          legend: 'none',
+          areaOpacity: 0.18,
+          axisTitlesPosition: 'out',
+          hAxis: {
+            title: '',
+            textStyle: {
+              color: '#fff',
+              fontName: 'Proxima Nova',
+              fontSize: 11,
+              bold: true,
+              italic: false
+            },
+            textPosition: 'out'
+          },
+          vAxis: {
+            minValue: 0,
+            textPosition: 'out',
+            textStyle: {
+              color: '#fff',
+              fontName: 'Proxima Nova',
+              fontSize: 11,
+              bold: true,
+              italic: false
+            },
+            baselineColor: '#16b4fc',
+            ticks: [0,25,50,75,100,125,150,175,200,225,250,275,300,325,350],
+            gridlines: {
+              color: '#1ba0fc',
+              count: 15
+            }
+          },
+          lineWidth: 2,
+          colors: ['#fff'],
+          curveType: 'function',
+          pointSize: 5,
+          pointShapeType: 'circle',
+          pointFillColor: '#f00',
+          backgroundColor: {
+            fill: '#008ffb',
+            strokeWidth: 0,
+          },
+          chartArea:{
+            left:0,
+            top:0,
+            width:'100%',
+            height:'100%'
+          },
+          fontSize: 11,
+          fontName: 'Proxima Nova',
+          tooltip: {
+            trigger: 'selection',
+            isHtml: true
+          }
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(dataTable, options);
+      }
+      $(window).resize(function(){
+        drawChart();
+        setTimeout(function(){
+        }, 1000);
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('.swal-btn-basic').click(function(e){
+        e.preventDefault();
+        swal("Here's a message!");
+      });
+
+      $('.swal-btn-text').click(function(e){
+        e.preventDefault();
+        swal({
+          title: "Here's a message!",
+          text: "It's pretty, isn't it?"
+        });
+      });
+
+      $('.swal-btn-success').click(function(e){
+        e.preventDefault();
+        swal({
+          title: "¡Buen trabajo!",
+          text: "Guardado con Exito! :)",
+          type: "success",
+          confirmButtonClass: "btn-success",
+          confirmButtonText: "OK"
+        });
+      });
+
+      $('.swal-btn-warning').click(function(e){
+        e.preventDefault();
+        swal({
+              title: "Are you sure?",
+              text: "Your will not be able to recover this imaginary file!",
+              type: "warning",
+              showCancelButton: true,
+              cancelButtonClass: "btn-default",
+              confirmButtonClass: "btn-warning",
+              confirmButtonText: "Warning",
+              closeOnConfirm: false
+            },
+            function(){
+              swal({
+                title: "Deleted!",
+                text: "Your imaginary file has been deleted.",
+                type: "success",
+                confirmButtonClass: "btn-success"
+              });
+            });
+      });
+
+      $('.swal-btn-cancel').click(function(e){
+        e.preventDefault();
+        swal({
+              title: "¿Seguro?",
+              text: "Cancelaras la Accion",
+              type: "warning",
+              showCancelButton: true,
+              confirmButtonClass: "btn-danger",
+              confirmButtonText: "Si, Cancelar",
+              cancelButtonText: "No, cancel plis!",
+              closeOnConfirm: false,
+              closeOnCancel: false
+            },
+            function(isConfirm) {
+              if (isConfirm) {
+                swal({
+                  title: "¡Borrado!",
+                  text: "Tu Accion a sido Cancelada.",
+                  type: "success",
+                  confirmButtonClass: "btn-success"
+                });
+              } else {
+                swal({
+                  title: "Cancelar",
+                  text: "Tu accion sigue a salvo :)",
+                  type: "error",
+                  confirmButtonClass: "btn-danger"
+                });
+              }
+            });
+      });
+
+      $('.swal-btn-custom-img').click(function(e){
+        e.preventDefault();
+        swal({
+          title: "Sweet!",
+          text: "Here's a custom image.",
+          confirmButtonClass: "btn-success",
+          imageUrl: 'img/smile.png'
+        });
+      });
+
+      $('.swal-btn-info').click(function(e){
+        e.preventDefault();
+        swal({
+          title: "Are you sure?",
+          text: "Your will not be able to recover this imaginary file!",
+          type: "info",
+          showCancelButton: true,
+          cancelButtonClass: "btn-default",
+          confirmButtonText: "Info",
+          confirmButtonClass: "btn-primary"
+        });
+      });
+
+      $('.swal-btn-input').click(function(e){
+        e.preventDefault();
+        swal({
+          title: "An input!",
+          text: "Write something interesting:",
+          type: "input",
+          showCancelButton: true,
+          closeOnConfirm: false,
+          inputPlaceholder: "Write something"
+        }, function (inputValue) {
+          if (inputValue === false) return false;
+          if (inputValue === "") {
+            swal.showInputError("You need to write something!");
+            return false
+          }
+          swal("Nice!", "You wrote: " + inputValue, "success");
+        });
+      });
+    });
+  </script>
+
+    <script>
+      $(function() {
+        $('#tags-editor-textarea').tagEditor();
+      });
+    </script>
+  <script src="assets/assets/js/app.js"></script>
+  </body>
+  </html>
+
